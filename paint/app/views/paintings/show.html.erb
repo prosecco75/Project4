@@ -1,0 +1,23 @@
+<%= image_tag @painting.image.url, width: 300 %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @painting.title %>
+</p>
+
+<p>
+  <strong>Painter:</strong>
+  <%= @painting.painter %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @painting.year %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= link_to @painting.painting.name, @painting.painting %>
+</p>
+
+<%= link_to 'Back', paintings_path %>
