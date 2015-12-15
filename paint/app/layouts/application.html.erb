@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paint!</title>
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="wrapper">
+    <%= render "header" %>
+
+    <% flash.each do |name, message| %>
+      <div class="row flash-message flash-message-<%= name %>">
+        <%= message %>
+      </div>  
+    <% end %>
+
+    <main class="row">
+      <div class="large-12 columns">
+        <%= yield %>
+      </div>
+    </main>
+
+    <div class="push"></div>
+  </div>
+
+  <footer class="row">
+    <nav>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", events_path %></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      &copy; 2015
+    </nav>
+  </footer>
+</body>
+</html>

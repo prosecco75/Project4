@@ -1,0 +1,228 @@
+/*******************************************************/
+/* Sticky footer */
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+  height: 100px; /* .push must be the same height as .footer */
+}
+
+/*******************************************************/
+/* Custom header */
+
+header {
+  border-top: 4px solid #000;
+  max-width: 1000px;
+  padding: 5px 0;
+  margin: 10px auto; 
+}
+
+.header-wrapper {
+  position: fixed;
+}
+
+.title-area .name h1 {
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+/*******************************************************/
+/* Home */
+
+.home {
+  min-height: 600px;
+  background: url(image_path("home.jpg"));
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+  ul {
+    max-width: 320px;
+    display: block;
+    margin: 400px auto 0;
+    li {
+      display: inline-block;
+      text-align: center;
+      color: black;
+      a {
+        background: white;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+/*******************************************************/
+/* Custom footer */
+
+footer {
+  border-top: 4px solid #000;
+  padding-top: 3em;
+  font-size: 11px;
+}
+
+footer, footer ul {
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer ul li a {
+  color: black;
+  font-size: 16px
+}
+
+body {
+  background: url(image-path('paper.jpg')) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1 {
+  font-family: /*******************************************************/
+/* Sticky footer */
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+  height: 100px; /* .push must be the same height as .footer */
+}
+
+/*******************************************************/
+/* Custom header */
+
+header {
+  border-top: 4px solid #000;
+  max-width: 1000px;
+  padding: 5px 0;
+  margin: 10px auto; 
+}
+
+.header-wrapper {
+  position: fixed;
+}
+
+.title-area .name h1 {
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+/*******************************************************/
+/* Home */
+
+.home {
+  min-height: 600px;
+  background: url(image_path("home.jpg"));
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+  ul {
+    max-width: 320px;
+    display: block;
+    margin: 400px auto 0;
+    li {
+      display: inline-block;
+      text-align: center;
+      color: black;
+      a {
+        background: white;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+/*******************************************************/
+/* Custom footer */
+
+footer {
+  border-top: 4px solid #000;
+  padding-top: 3em;
+  font-size: 11px;
+}
+
+footer, footer ul {
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer ul li a {
+  color: black;
+  font-size: 16px
+}
+
+body {
+  background: url(image-path('paper.jpg')) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+.user-show-profile {
+  max-width: 300px;
+}
+}
+
+a:hover {
+  text-decoration: underline
+}
+

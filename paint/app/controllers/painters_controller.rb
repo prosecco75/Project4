@@ -1,14 +1,12 @@
-class PaintingsController < ApplicationController
+class PaintersController < ApplicationController
   before_action :set_painting, only: [:show]
 
   # GET /painters
-  # GET /painters.json
  def index
-   @painters = Painters.all
+   @painters = Painter.all
  end
 
   # GET /painters/1
-  # GET /painters/1.json
   def show
   end
 end
