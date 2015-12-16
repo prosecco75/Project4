@@ -8,32 +8,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="wrapper">
-    <%= render "header" %>
+  <%= render "header" %>
 
-    <% flash.each do |name, message| %>
-      <div class="row flash-message flash-message-<%= name %>">
-        <%= message %>
-      </div>  
-    <% end %>
+  <% flash.each do |name, message| %>
+    <div class="alert alert-info alert-<%= name %>" role="alert">
+      <%= message %>
+    </div>  
+  <% end %>
 
-    <main class="row">
-      <div class="large-12 columns">
-        <%= yield %>
-      </div>
-    </main>
+  <main class="container">
+    <div class="large-12 columns">
+      <%= yield %>
+    </div>
+  </main>
 
-    <div class="push"></div>
-  </div>
-
-  <footer class="row">
+  <footer class="container">
     <nav>
-      <ul>
+      <ol class="breadcrumb">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About", paintings_path %></li>
         <li><a href="">Contact</a></li>
-      </ul>
-      &copy; 2015
+        <li>&copy; 2015</li>
+      </ol>
     </nav>
   </footer>
 </body>
