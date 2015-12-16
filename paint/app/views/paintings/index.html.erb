@@ -1,5 +1,9 @@
 <h1>Paintings</h1>
 
 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-  <%= render @paintings %>
+  <% @paintings.each do |painting| %>
+    <%= painting.title %>
+  <% end %>
+
+
 </ul>

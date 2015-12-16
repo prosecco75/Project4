@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @post.venue.name %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @post.review %>
+</p>
+
+
+<p>
+  <strong>Rating:</strong>
+  <%= @post.rating %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user.username %>
+</p>
+
+<%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
