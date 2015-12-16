@@ -1,9 +1,16 @@
 <h1>Paintings</h1>
 
 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-  <% @paintings.each do |painting| %>
-    <%= painting.title %>
-  <% end %>
+
+<% @tags.each do |tag| %>
+  <%= tag.name %>
+<% end %>
+
+<%= @paintings.inspect %>
+
+<% @paintings.each do |painting| %>
+  <%= image_tag(painting.images.thumbnail.url) %>
+<% end %>
 
 
 </ul>

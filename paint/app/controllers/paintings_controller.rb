@@ -3,7 +3,14 @@ class PaintingsController < ApplicationController
 
   # GET /paintings
  def index
-   @paintings = Painting.all
+    query = params[:search]
+    client = Instagram.client(:access_token => session[:access_token])
+    @tags = client.tag_search(query)
+    p @tags
+
+    @paintings = client.tag_recent_media("beiber", count: 100)
+    p @paintings
+    # @paintings = Painting.all
  end
 
   # GET /paintings/1

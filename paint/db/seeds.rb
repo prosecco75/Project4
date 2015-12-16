@@ -9,7 +9,7 @@ u2 = User.create!(email: "sandro@hotmail.com", password: "password", username: "
 
 u3 = User.create!(email: "maria@hotmail.com", password: "password", username: "Maria")
 
-u4 = User.create!(email: "alex@hotmail.com", password: "password", username: "alex")
+u4 = User.create!(email: "alexander@hotmail.com", password: "password", username: "alex")
 
 u5 = User.create!(email: "alice@hotmail.com", password: "password", username: "Alice")
 

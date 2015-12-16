@@ -11,7 +11,7 @@
   <%= render "header" %>
 
   <% flash.each do |name, message| %>
-    <div class="alert alert-info alert-<%= name %>" role="alert">
+    <div class="container alert alert-info alert-<%= name %>" role="alert">
       <%= message %>
     </div>  
   <% end %>
