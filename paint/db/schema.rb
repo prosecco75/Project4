@@ -11,35 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216113003) do
+ActiveRecord::Schema.define(version: 20151215115855) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
     t.string   "title"
     t.integer  "user_id"
+    t.integer  "painting_rating"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.integer  "painting_rating"
   end
 
   create_table "painters", force: :cascade do |t|
-    t.string   "painter_name"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.integer  "painter_yob"
-    t.string   "painter_country"
-    t.string   "painter_bio"
+    t.string   "name"
+    t.integer  "yob"
+    t.string   "country"
+    t.text     "bio"
     t.string   "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "paintings", force: :cascade do |t|
-    t.date     "painting_year"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-    t.string   "image_url"
-    t.string   "painting_location"
-    t.integer  "painting_id"
     t.string   "title"
+    t.date     "year"
+    t.string   "image_url"
+    t.string   "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -58,7 +60,7 @@ ActiveRecord::Schema.define(version: 20151216113003) do
     t.string   "username"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

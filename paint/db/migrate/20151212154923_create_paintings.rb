@@ -4,6 +4,7 @@ class CreatePaintings < ActiveRecord::Migration
       t.string :title
       t.date :year
       t.string :image_url
+      t.string :location
 
       t.timestamps null: false
     end
