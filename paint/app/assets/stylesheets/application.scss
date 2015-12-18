@@ -11,3 +11,21 @@ header img {
   vertical-align: center;
   display: inline-block;
 }
+
+#paintings {
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  overflow: hidden;
+  span {
+    color: red;
+  }
+}
+
+.navbar-brand {
+  span {
+    color: red;
+  }
+}

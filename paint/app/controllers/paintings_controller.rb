@@ -3,14 +3,12 @@ class PaintingsController < ApplicationController
 
   # GET /paintings
  def index
-    query = params[:search]
-    client = Instagram.client(:access_token => session[:access_token])
-    @tags = client.tag_search(query)
-    p @tags
-
-    @paintings = client.tag_recent_media("beiber", count: 100)
-    p @paintings
-    # @paintings = Painting.all
+    flickr = Flickr.new(YAML.load_file(Rails.root.join('config', 'flickr.yml')))
+    if params[:search]
+      @paintings = flickr.photos.search(tags: params[:search]).take(10)
+    else 
+      @paintings = flickr.photos.search(tags: "manet")
+    end
  end
 
   # GET /paintings/1

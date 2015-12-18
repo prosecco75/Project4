@@ -15,3 +15,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(window).load(function(){
+  var container = document.querySelector('#paintings');
+  var msnry = new Masonry( container, {
+    itemSelector: '.painting',
+    columnWidth: '.painting',                
+  });  
+})
+  
