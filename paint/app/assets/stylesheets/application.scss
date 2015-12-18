@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 header img {
   height: 35px;
   width: 35px;
@@ -31,7 +32,6 @@ h1 {
 }
 
 
-
 .home {
   min-height: 600px;
   background: url(image_path("nighthawks.jpg"));
@@ -54,6 +54,7 @@ h1 {
     }
   }
 }
+
 
 .jumbotron {
   background-color: #FFD700;
