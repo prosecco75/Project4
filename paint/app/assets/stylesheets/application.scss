@@ -12,6 +12,36 @@ header img {
   display: inline-block;
 }
 
+.navbar navbar-default {
+  color: navbar navbar-default;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #EE3A8C;
+}
+
+.breadcrumb {
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+   text-align: center;
+}
+
+.jumbotron {
+  background-color: #FFD700;
+  color: #B0171F;
+}
+
+.btn-primary {
+  background-color: #CD0000;
+}
+
+.btn-primary:hover {
+  background-color: #EE30A7;
+}
+
 #paintings {
   margin: 0;
   padding: 0;
@@ -20,7 +50,7 @@ header img {
 .clear {
   overflow: hidden;
   span {
-    color: red;
+    color: #ab0000;
   }
 }
 
